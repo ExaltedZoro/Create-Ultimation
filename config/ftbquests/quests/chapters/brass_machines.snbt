@@ -1,0 +1,134 @@
+{
+	id: "73F3EA0A2FFA2CC7"
+	group: "2577373B7BD52BC3"
+	order_index: 1
+	filename: "brass_machines"
+	title: "Brass Machines"
+	icon: "create:brass_casing"
+	default_quest_shape: ""
+	default_hide_dependency_lines: false
+	quests: [
+		{
+			x: 0.0d
+			y: 0.0d
+			dependencies: ["39E68579F97A2ECA"]
+			id: "75DA118FA195C038"
+			tasks: [{
+				id: "5343F9D5CD8FC1F7"
+				type: "checkmark"
+				title: "Brass Machines"
+			}]
+		}
+		{
+			x: -3.0d
+			y: 2.0d
+			description: ["Brass Funnels add the ability to extract specific amounts and specify what is inserted/extracted."]
+			dependencies: ["75DA118FA195C038"]
+			id: "7BB33B1EA2453B2A"
+			tasks: [{
+				id: "5BF34F88F7F33D6C"
+				type: "item"
+				item: "create:brass_funnel"
+			}]
+		}
+		{
+			x: -3.5d
+			y: 0.0d
+			description: ["Brass Tunnels take any amount of inputs and splits them between available outputs based on the current filter option."]
+			dependencies: ["75DA118FA195C038"]
+			id: "419DECD854AD9CB8"
+			tasks: [{
+				id: "221FEB275B9325A7"
+				type: "item"
+				item: "create:brass_tunnel"
+			}]
+		}
+		{
+			x: -1.5d
+			y: 3.0d
+			description: ["The Rotation Speed Controller allows for much easier and finer tuning of rotational speed and direction."]
+			dependencies: ["75DA118FA195C038"]
+			id: "78B3AC1A1411F8EF"
+			tasks: [{
+				id: "490A17C4F010A8DD"
+				type: "item"
+				item: "create:rotation_speed_controller"
+			}]
+		}
+		{
+			x: 3.5d
+			y: 0.0d
+			description: ["The Mechanical Arm is the Deployers cooler cousin. It can take items from anywhere within it's range and put them anywhere else within it's range. If you want to do filtering like Factorio, this is the block for you."]
+			dependencies: ["75DA118FA195C038"]
+			id: "1416375B92E922F0"
+			tasks: [{
+				id: "054066549864BB96"
+				type: "item"
+				item: "create:mechanical_arm"
+			}]
+		}
+		{
+			x: 3.0d
+			y: 2.0d
+			description: ["Mechanical Crafters can automate any crafting recipe that can't be automated with any other machine. It also unlocks access to unique recipes that cannot be done in a regular crafting table, such as Crushing Wheels."]
+			dependencies: ["75DA118FA195C038"]
+			id: "3937FB30CB8148D8"
+			tasks: [{
+				id: "501F3E88BA47448F"
+				type: "item"
+				item: "create:mechanical_crafter"
+			}]
+		}
+		{
+			x: 0.0d
+			y: 4.5d
+			description: ["The Storage Root is the block that will kickstart your adventures into storage networks. It allows you to create a Simple Storage Network to link chests, barrels etc all into one place."]
+			dependencies: ["75DA118FA195C038"]
+			id: "5281D01800F8A71D"
+			tasks: [{
+				id: "34E30D999401021C"
+				type: "item"
+				item: "storagenetwork:master"
+			}]
+		}
+		{
+			title: "Crushing Wheels"
+			x: 1.5d
+			y: 3.0d
+			description: ["Say hi to the big boys. The Crushing Wheels can crush things much better than the Millstone ever could. These will be very useful."]
+			dependencies: ["3937FB30CB8148D8"]
+			id: "0BB38FD680BF66C8"
+			tasks: [{
+				id: "225C487159E09D72"
+				type: "item"
+				item: "create:crushing_wheel"
+				count: 2L
+			}]
+		}
+		{
+			x: -1.0d
+			y: 6.0d
+			description: ["Link Cables allow you to connect inventories to your storage network. This way you can centralise access to your chests in a single place."]
+			dependencies: ["5281D01800F8A71D"]
+			id: "3633CF4AE13B0CE1"
+			tasks: [{
+				id: "75124B03CD68A0CE"
+				type: "item"
+				item: "storagenetwork:storage_kabel"
+			}]
+		}
+		{
+			x: 1.0d
+			y: 6.0d
+			description: ["Storage Inventories allow you to view the contents of your storage network, but without a crafting table."]
+			dependencies: ["5281D01800F8A71D"]
+			id: "23413F8846599AFB"
+			tasks: [{
+				id: "65EA3284B948108D"
+				type: "item"
+				item: "storagenetwork:inventory"
+			}]
+		}
+	]
+	quest_links: [ ]
+}

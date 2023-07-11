@@ -1,0 +1,417 @@
+{
+	id: "63F76CFD9BD8AA15"
+	group: "19E48B7F0FDBE485"
+	order_index: 0
+	filename: "the_mekanism_mechanism"
+	title: "The Mekanical Mechanism"
+	icon: "create:mek_mechanism"
+	default_quest_shape: ""
+	default_hide_dependency_lines: false
+	quests: [
+		{
+			title: "Chapter 5: Mekanisms Galore"
+			x: 0.0d
+			y: 0.0d
+			subtitle: "Chapter 5 Start"
+			description: ["This is the last set of machines that you'll be unlocking. These are generally considered more powerful than the Thermal machines you currently have access to but don't offer as much variety with what you can do, especially when it comes to fluids."]
+			id: "679D2A0597DE59A8"
+			tasks: [{
+				id: "7A563AAEC11CF3E9"
+				type: "checkmark"
+				title: "Chapter 5: Mekanisms Galore"
+			}]
+		}
+		{
+			icon: "create:mek_mechanism"
+			x: 0.0d
+			y: 12.0d
+			subtitle: "Wow so cool"
+			description: ["With these successfully automated, you can create a whole new set of more refined machines. Nice work!"]
+			dependencies: [
+				"2454D2483140627E"
+				"50F72DACC106E244"
+			]
+			size: 3.0d
+			id: "46799B6B3FC0F201"
+			tasks: [
+				{
+					id: "5A700741C8849597"
+					type: "item"
+					item: "create:mek_mechanism"
+				}
+				{
+					id: "73E5AE051E3154B5"
+					type: "checkmark"
+					title: "Automated"
+				}
+			]
+			rewards: [
+				{
+					id: "6B8AC06C24111D14"
+					type: "item"
+					item: "create:mek_mechanism"
+					count: 16
+				}
+				{
+					id: "72EAE03D7F903E20"
+					type: "item"
+					item: "mekanism:steel_casing"
+					count: 4
+				}
+				{
+					id: "1CBB0DA799EB4447"
+					type: "item"
+					item: "mekanism:alloy_infused"
+					count: 32
+				}
+			]
+		}
+		{
+			title: "Liquid Oxygen"
+			icon: "mekanism:oxygen_bucket"
+			x: -2.5d
+			y: 10.0d
+			dependencies: ["514AD4FAF541E92C"]
+			id: "2454D2483140627E"
+			tasks: [{
+				id: "32729DDC73267D4C"
+				type: "checkmark"
+				title: "Automated"
+			}]
+		}
+		{
+			icon: "mekanism:alloy_infused"
+			x: 2.0d
+			y: 9.5d
+			dependencies: [
+				"2BE9BBB14BABE3C4"
+				"2FE3837A863637BB"
+			]
+			id: "50F72DACC106E244"
+			tasks: [
+				{
+					id: "3BCD9D105FC8E813"
+					type: "item"
+					item: "mekanism:alloy_infused"
+				}
+				{
+					id: "641BF084412F8567"
+					type: "checkmark"
+					title: "Automated"
+				}
+			]
+		}
+		{
+			x: -4.0d
+			y: 8.0d
+			dependencies: ["44CC6021DAE0900E"]
+			id: "514AD4FAF541E92C"
+			tasks: [{
+				id: "3F57D6A3478FD061"
+				type: "item"
+				item: "minecraft:blue_ice"
+			}]
+		}
+		{
+			x: -5.0d
+			y: 5.5d
+			dependencies: ["0E73B4351D6EE5D8"]
+			id: "44CC6021DAE0900E"
+			tasks: [{
+				id: "7A4482D9701387BE"
+				type: "item"
+				item: "minecraft:packed_ice"
+			}]
+		}
+		{
+			x: -5.0d
+			y: 3.0d
+			hide_dependency_lines: true
+			dependencies: ["679D2A0597DE59A8"]
+			id: "0E73B4351D6EE5D8"
+			tasks: [{
+				id: "781986D20430BB20"
+				type: "item"
+				item: "minecraft:ice"
+			}]
+		}
+		{
+			icon: "thermal:steel_ingot"
+			x: 1.5d
+			y: 8.0d
+			dependencies: [
+				"01699384136110D4"
+				"477C3FE2733BEAC0"
+			]
+			id: "2BE9BBB14BABE3C4"
+			tasks: [
+				{
+					id: "48D70D34418CE28F"
+					type: "item"
+					item: "thermal:steel_ingot"
+				}
+				{
+					id: "470A0B7A22CFA912"
+					type: "checkmark"
+					title: "Automated"
+				}
+			]
+		}
+		{
+			title: "Molten Signalum"
+			icon: "tconstruct:molten_signalum_bucket"
+			x: 3.5d
+			y: 8.5d
+			description: ["To make this you're going to need a superheated Blaze Burner"]
+			dependencies: [
+				"148B06152800FE64"
+				"68019B365B958F08"
+				"7F8F2ED4AC16E935"
+			]
+			id: "2FE3837A863637BB"
+			tasks: [{
+				id: "32F5CCD00176C13C"
+				type: "checkmark"
+				title: "Automated"
+			}]
+		}
+		{
+			title: "Copper"
+			icon: "minecraft:copper_ingot"
+			x: 3.5d
+			y: 10.5d
+			subtitle: "Automated in Chapter 2"
+			hide_dependency_lines: true
+			dependencies: ["679D2A0597DE59A8"]
+			id: "148B06152800FE64"
+			tasks: [{
+				id: "56C40E42A7131C5A"
+				type: "checkmark"
+				title: "Automated"
+			}]
+		}
+		{
+			title: "Redstone"
+			icon: "minecraft:redstone"
+			x: 6.0d
+			y: 9.0d
+			subtitle: "Automated in Chapter 3"
+			hide_dependency_lines: true
+			dependencies: ["679D2A0597DE59A8"]
+			id: "68019B365B958F08"
+			tasks: [{
+				id: "2A68C6145AD3D6EA"
+				type: "checkmark"
+				title: "Automated"
+			}]
+		}
+		{
+			title: "Iron"
+			icon: "minecraft:iron_ingot"
+			x: -0.5d
+			y: 7.0d
+			subtitle: "Automated in Chapter 1"
+			hide_dependency_lines: true
+			dependencies: ["679D2A0597DE59A8"]
+			dependency_requirement: "one_started"
+			id: "01699384136110D4"
+			tasks: [{
+				id: "59E21AF84BB60406"
+				type: "checkmark"
+				title: "Automated"
+			}]
+		}
+		{
+			icon: {
+				id: "create:chromatic_compound"
+				Count: 1b
+				tag: { }
+			}
+			x: 4.5d
+			y: 7.0d
+			dependencies: ["7652D4123594A717"]
+			id: "7F8F2ED4AC16E935"
+			tasks: [
+				{
+					id: "309F5CE0B644D6E0"
+					type: "item"
+					item: {
+						id: "create:chromatic_compound"
+						Count: 1b
+						tag: { }
+					}
+				}
+				{
+					id: "20AF34C211DE039D"
+					type: "checkmark"
+					title: "Automated"
+				}
+			]
+		}
+		{
+			title: "Your choice of Carbon"
+			icon: "minecraft:coal"
+			x: 1.5d
+			y: 6.0d
+			description: [
+				"At this point Steel can be made using 2 different items, Coal or Coal Coke."
+				""
+				"Coal - Requires less processing but has a ratio of 2:1 with Steel."
+				""
+				"Coal Coke - Requires the very slow Pyrolyzer to create, but has a better 1:1 ratio and provides the means to get Crude Oil for superheating Blaze Burners."
+			]
+			hide_dependency_lines: true
+			dependencies: ["679D2A0597DE59A8"]
+			id: "477C3FE2733BEAC0"
+			tasks: [{
+				id: "78836834A8F13FA4"
+				type: "checkmark"
+				title: "Automated"
+			}]
+		}
+		{
+			icon: "thermal:machine_bottler"
+			x: 5.0d
+			y: 5.5d
+			subtitle: "Cover in Ink"
+			dependencies: [
+				"5F256849DF02AF2D"
+				"17D1DD54EBDED42A"
+			]
+			id: "7652D4123594A717"
+			tasks: [{
+				id: "7054B6107E834524"
+				type: "checkmark"
+				title: "Sequence Step 4"
+			}]
+		}
+		{
+			icon: "minecraft:white_dye"
+			x: 4.0d
+			y: 4.0d
+			subtitle: "Deploy a Dye, any Dye"
+			dependencies: ["0C9BF8620260A30C"]
+			id: "5F256849DF02AF2D"
+			tasks: [{
+				id: "6874356234F8FF12"
+				type: "checkmark"
+				title: "Sequence Step 3"
+			}]
+		}
+		{
+			icon: "createaddition:rolling_mill"
+			x: 2.5d
+			y: 3.0d
+			dependencies: ["2CEDAE30C1A027A2"]
+			id: "0C9BF8620260A30C"
+			tasks: [{
+				id: "79D6F99FFF280B2D"
+				type: "checkmark"
+				title: "Sequence Step 2"
+			}]
+		}
+		{
+			icon: "create:mechanical_press"
+			x: 0.5d
+			y: 3.0d
+			dependencies: ["2B2B0E61B61DF8F1"]
+			id: "2CEDAE30C1A027A2"
+			tasks: [{
+				id: "62745ADB6B3293BC"
+				type: "checkmark"
+				title: "Sequence Step 1"
+			}]
+		}
+		{
+			title: "Chromatic Compound Sequencing"
+			icon: {
+				id: "create:chromatic_compound"
+				Count: 1b
+				tag: { }
+			}
+			x: -1.5d
+			y: 3.5d
+			description: ["Another External Sequence! This time for Chromatic Compound, the base of advanced alloys."]
+			hide_dependency_lines: true
+			dependencies: ["679D2A0597DE59A8"]
+			id: "2B2B0E61B61DF8F1"
+			tasks: [{
+				id: "46E5D3D71E25DF78"
+				type: "checkmark"
+				title: "Chromatic Compound"
+			}]
+		}
+		{
+			title: "Ink"
+			icon: "create_enchantment_industry:ink_bucket"
+			x: 6.5d
+			y: 4.5d
+			dependencies: [
+				"3819CD647ED6CAE5"
+				"1548603BC63F8C53"
+			]
+			id: "17D1DD54EBDED42A"
+			tasks: [{
+				id: "308CC283521F198F"
+				type: "checkmark"
+				title: "Automated"
+			}]
+		}
+		{
+			icon: "minecraft:black_dye"
+			x: 6.0d
+			y: 3.0d
+			hide_dependency_lines: true
+			dependencies: ["679D2A0597DE59A8"]
+			id: "3819CD647ED6CAE5"
+			tasks: [
+				{
+					id: "27D6CE222B7B0F95"
+					type: "item"
+					item: "minecraft:black_dye"
+				}
+				{
+					id: "3DC4446B42A83482"
+					type: "checkmark"
+					title: "Automated"
+				}
+			]
+		}
+		{
+			title: "Water"
+			icon: "minecraft:water_bucket"
+			x: 8.0d
+			y: 3.5d
+			subtitle: "Automated in Chapter 2"
+			hide_dependency_lines: true
+			dependencies: ["679D2A0597DE59A8"]
+			id: "1548603BC63F8C53"
+			tasks: [{
+				id: "0520858C86285C6B"
+				type: "checkmark"
+				title: "Automated"
+			}]
+		}
+		{
+			title: "New Bases"
+			x: 3.0d
+			y: 13.5d
+			description: ["Mekanical machines grant you access to new bases for the Thermal and Digital Mechanisms."]
+			dependencies: ["46799B6B3FC0F201"]
+			id: "13B0296E69C52473"
+			tasks: [
+				{
+					id: "34E3F8A96A295F02"
+					type: "item"
+					item: "create:thermal_base"
+				}
+				{
+					id: "52702BB1660FED87"
+					type: "item"
+					item: "create:digital_base"
+				}
+			]
+		}
+	]
+	quest_links: [ ]
+}

@@ -1,0 +1,127 @@
+{
+	id: "0610A5EC6064D54A"
+	group: ""
+	order_index: 0
+	filename: "information"
+	title: "Information"
+	default_quest_shape: ""
+	default_hide_dependency_lines: false
+	quests: [
+		{
+			x: 0.0d
+			y: 0.0d
+			description: [
+				"Welcome to Create: Ultimation, a modpack HEAVILY inspired by Create: Above and Beyond. This pack will feature some of the same things as Above and Beyond, but with a few key differences."
+				""
+				"In this pack you will be tasked with automating many different tiers of mechanisms, each more complex than the last, to achieve higher levels of technology while also keeping to your roots."
+				""
+				"Any non-Create logistics apart from gas and heat pipes have been removed. Keep that Create energy flowing!"
+			]
+			id: "3E5C52C17DBD3CDE"
+			tasks: [{
+				id: "2AB134CE8F62F1CC"
+				type: "checkmark"
+				title: "Welcome!"
+			}]
+		}
+		{
+			title: "Progression"
+			x: 2.0d
+			y: 0.0d
+			description: [
+				"During this pack you will progress from the very basics all the way to creations that may even break the laws of physics as we know them."
+				""
+				"Each mechanism will use the previous one as a base. Each tier gives you access to more and more technology for you to play around with and maybe even upgrade your production lines with better recipes for mechanisms."
+			]
+			dependencies: ["3E5C52C17DBD3CDE"]
+			id: "0480D02123865440"
+			tasks: [{
+				id: "5D9E1C800DB65D8A"
+				type: "checkmark"
+				title: "There are three different types of components. Mechanisms, Circuits and Matrices."
+			}]
+		}
+		{
+			x: 4.0d
+			y: 0.0d
+			description: [
+				"The goal in this pack is to create the Ultimate Mechanism, an all powerful combination of the milestones you'll achieve throughout the pack."
+				""
+				"It'll be a lot of work, but this book will guide you through it."
+			]
+			dependencies: ["0480D02123865440"]
+			id: "11E82CCA064F8651"
+			tasks: [{
+				id: "6AA2D58968BA64C4"
+				type: "checkmark"
+				title: "The Goal"
+			}]
+		}
+		{
+			title: "World Customisation"
+			x: 8.0d
+			y: 0.0d
+			description: ["Check out the Useful Commands quest page to tailor your experience to your liking!"]
+			dependencies: ["1E4FF9A1FFB8EE6B"]
+			id: "2CFE23CE196816B9"
+			tasks: [{
+				id: "7034059E18DD25C4"
+				type: "checkmark"
+				title: "World Changes"
+			}]
+		}
+		{
+			x: 12.0d
+			y: 0.0d
+			description: [
+				"You can now begin your journey of automation and evolution! Good luck!"
+				""
+				"Also, take these. A special gift for you that I can guarantee you'll use a lot going forward."
+			]
+			dependencies: ["6572216CE5306DDF"]
+			id: "4E6E0AB193EAA5D4"
+			tasks: [{
+				id: "423E91B39067F6EC"
+				type: "checkmark"
+				title: "Off you go!"
+			}]
+			rewards: [
+				{
+					id: "50B6849E8958081D"
+					type: "item"
+					item: "create:wrench"
+				}
+				{
+					id: "11ADCA0133A9A5E3"
+					type: "item"
+					item: "create:goggles"
+				}
+			]
+		}
+		{
+			x: 6.0d
+			y: 0.0d
+			description: ["While this quest book will prove very useful as an extensive guide to each chapter, that's all it is, a guide. Multiple items have different ways of automating them. Feel free to experiment a little."]
+			dependencies: ["11E82CCA064F8651"]
+			id: "1E4FF9A1FFB8EE6B"
+			tasks: [{
+				id: "4B3CF9C12ECCBCF8"
+				type: "checkmark"
+				title: "The Quest Book"
+			}]
+		}
+		{
+			x: 10.0d
+			y: 0.0d
+			description: ["The Ponder System is Create's built-in tutorial system. Ponder scenes give you a visual representation of what Create items do in pretty good detail. If you ever find yourself stuck on how something works with the Create mod, check out the ponder system first."]
+			dependencies: ["2CFE23CE196816B9"]
+			id: "6572216CE5306DDF"
+			tasks: [{
+				id: "4EFA611A19EBCD8E"
+				type: "checkmark"
+				title: "Pondering"
+			}]
+		}
+	]
+	quest_links: [ ]
+}

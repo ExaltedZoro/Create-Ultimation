@@ -1,0 +1,247 @@
+{
+	id: "7BE1ADF3F0E37D3E"
+	group: ""
+	order_index: 3
+	filename: "ore_processing"
+	title: "Ore Processing"
+	icon: "minecraft:raw_iron"
+	default_quest_shape: ""
+	default_hide_dependency_lines: false
+	quests: [
+		{
+			x: 0.0d
+			y: 0.0d
+			description: ["Ore Processing has been revamped in this pack. Ores don't give as much as they normally do at base so you may want to set up a more complex path to your ingots."]
+			id: "3D0BD660832D6436"
+			tasks: [{
+				id: "008B5E3B0EA0FED9"
+				type: "checkmark"
+				title: "Ore Processing"
+			}]
+		}
+		{
+			icon: "minecraft:raw_iron"
+			x: 0.0d
+			y: 2.0d
+			dependencies: ["3D0BD660832D6436"]
+			id: "770301676F4A6FEC"
+			tasks: [{
+				id: "4716BB10598EE8F1"
+				type: "checkmark"
+				title: "Raw Ores"
+			}]
+		}
+		{
+			icon: "minecraft:furnace"
+			x: -5.0d
+			y: 4.5d
+			subtitle: "1 to 3 Nuggets"
+			dependencies: [
+				"770301676F4A6FEC"
+				"27C633968E1C7A19"
+			]
+			dependency_requirement: "one_completed"
+			id: "70906664190681F5"
+			tasks: [{
+				id: "348E7AD881CF129F"
+				type: "checkmark"
+				title: "Smelting/Blasting"
+			}]
+		}
+		{
+			icon: "create:millstone"
+			x: 0.0d
+			y: 4.5d
+			subtitle: "1 to 1 Crushed"
+			dependencies: ["770301676F4A6FEC"]
+			id: "27C633968E1C7A19"
+			tasks: [{
+				id: "59801DB636FB4E1D"
+				type: "checkmark"
+				title: "Crushing/Milling"
+			}]
+		}
+		{
+			icon: "create:crushing_wheel"
+			x: -2.0d
+			y: 6.0d
+			subtitle: "1 to ~3.75 Dust"
+			dependencies: ["27C633968E1C7A19"]
+			id: "52FFC4F5A6E684BA"
+			tasks: [{
+				id: "7A1DD9CB5FBB0459"
+				type: "checkmark"
+				title: "Crushing"
+			}]
+		}
+		{
+			icon: "create:millstone"
+			x: 2.0d
+			y: 6.0d
+			subtitle: "1 to 3 Dust"
+			dependencies: ["27C633968E1C7A19"]
+			id: "47FF22256BD9CA05"
+			tasks: [{
+				id: "3BFAD863CC98A6C6"
+				type: "checkmark"
+				title: "Milling"
+			}]
+		}
+		{
+			icon: {
+				id: "tconstruct:smeltery_controller"
+				Count: 1b
+				tag: {
+					texture: "tconstruct:seared_bricks"
+				}
+			}
+			x: 3.0d
+			y: 9.0d
+			subtitle: "1 to 3 Molten Nuggets"
+			dependencies: [
+				"52FFC4F5A6E684BA"
+				"47FF22256BD9CA05"
+			]
+			dependency_requirement: "one_completed"
+			id: "43E8A33C4D3B2ADE"
+			tasks: [{
+				id: "41D85A926A98B97A"
+				type: "checkmark"
+				title: "Melting"
+			}]
+		}
+		{
+			icon: "minecraft:iron_ingot"
+			x: 0.0d
+			y: 13.0d
+			dependencies: [
+				"32DDD117A983D8E1"
+				"559A0AED19788D0B"
+			]
+			dependency_requirement: "one_completed"
+			id: "652D075A3B357D7E"
+			tasks: [{
+				id: "157A6BE5678A94D6"
+				type: "checkmark"
+				title: "Ingot"
+			}]
+		}
+		{
+			icon: "create:mechanical_press"
+			x: -5.5d
+			y: 11.0d
+			subtitle: "9 to 1 Ingot"
+			dependencies: [
+				"70906664190681F5"
+				"2802CE4B693624C2"
+				"6830A87A3ECAE0C0"
+			]
+			dependency_requirement: "one_completed"
+			id: "32DDD117A983D8E1"
+			tasks: [{
+				id: "2E0646316533641F"
+				type: "checkmark"
+				title: "Compacting"
+			}]
+		}
+		{
+			title: "Casting/Chilling"
+			icon: "tconstruct:seared_table"
+			x: 5.5d
+			y: 11.0d
+			dependencies: [
+				"43E8A33C4D3B2ADE"
+				"45998F6A13D06C29"
+				"474963A9BC8EFFE9"
+			]
+			dependency_requirement: "one_completed"
+			id: "559A0AED19788D0B"
+			tasks: [{
+				id: "2BF56CDEA0F4A435"
+				type: "checkmark"
+				title: "Casting"
+			}]
+		}
+		{
+			icon: {
+				id: "tconstruct:foundry_controller"
+				Count: 1b
+				tag: {
+					texture: "tconstruct:scorched_bricks"
+				}
+			}
+			x: 5.0d
+			y: 4.5d
+			subtitle: "1 to 1 Molten Ingot"
+			description: ["Note: Cannot be done in a smeltery"]
+			dependencies: ["770301676F4A6FEC"]
+			id: "45998F6A13D06C29"
+			tasks: [{
+				id: "26BA2C4B125CA0CF"
+				type: "checkmark"
+				title: "Foundry Melting"
+			}]
+		}
+		{
+			title: "Smelting/Blasting"
+			icon: "minecraft:furnace"
+			x: -3.0d
+			y: 9.0d
+			subtitle: "1 to 1 Nugget"
+			dependencies: [
+				"52FFC4F5A6E684BA"
+				"47FF22256BD9CA05"
+			]
+			dependency_requirement: "one_completed"
+			id: "2802CE4B693624C2"
+			tasks: [{
+				id: "59FC0DF26D91891F"
+				type: "checkmark"
+				title: "Smelting"
+			}]
+		}
+		{
+			icon: "create:mechanical_mixer"
+			x: 0.0d
+			y: 8.5d
+			dependencies: [
+				"52FFC4F5A6E684BA"
+				"47FF22256BD9CA05"
+			]
+			dependency_requirement: "one_completed"
+			id: "252BE6A2CE908861"
+			tasks: [{
+				id: "6557A58A5F4EF03C"
+				type: "checkmark"
+				title: "Mixing"
+			}]
+		}
+		{
+			icon: "minecraft:experience_bottle"
+			x: -2.0d
+			y: 10.0d
+			subtitle: "3 to 18 Nuggets"
+			dependencies: ["252BE6A2CE908861"]
+			id: "6830A87A3ECAE0C0"
+			tasks: [{
+				id: "51F95716B38EB23F"
+				type: "checkmark"
+				title: "Heated Experience Mixing"
+			}]
+		}
+		{
+			icon: "create_enchantment_industry:hyper_experience_bottle"
+			x: 2.0d
+			y: 10.0d
+			subtitle: "1 to 1 Molten Ingot"
+			dependencies: ["252BE6A2CE908861"]
+			id: "474963A9BC8EFFE9"
+			tasks: [{
+				id: "480FDC8E3429F721"
+				type: "checkmark"
+				title: "Superheated Hyper Experience Mixing"
+			}]
+		}
+	]
+	quest_links: [ ]
+}

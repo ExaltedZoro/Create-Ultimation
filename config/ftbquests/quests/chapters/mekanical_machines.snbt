@@ -1,0 +1,21 @@
+{
+	id: "1673A3731125C7FA"
+	group: "19E48B7F0FDBE485"
+	order_index: 1
+	filename: "mekanical_machines"
+	title: "Mekanical Machines"
+	icon: "mekanism:steel_casing"
+	default_quest_shape: ""
+	default_hide_dependency_lines: false
+	quests: [{
+		x: 0.0d
+		y: 0.0d
+		id: "39E1A40A5F0E809E"
+		tasks: [{
+			id: "4C67FFBA82AF0F40"
+			type: "checkmark"
+			title: "Mekanical Machines"
+		}]
+	}]
+	quest_links: [ ]
+}

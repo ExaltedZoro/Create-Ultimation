@@ -1,0 +1,329 @@
+{
+	id: "692D62299D3F17E9"
+	group: "7F88F85128EACFE6"
+	order_index: 1
+	filename: "chapter_1_andesite_beginnings"
+	title: "Automating the Primitive Mechanism"
+	icon: "create:primitive_mechanism"
+	default_quest_shape: ""
+	default_hide_dependency_lines: false
+	quests: [
+		{
+			title: "Chapter 1: Andesite Beginnings"
+			x: 0.0d
+			y: 0.0d
+			subtitle: "Chapter 1 Start"
+			description: [
+				"This quest page may look simple, but that's just because there's not many actual steps."
+				""
+				"You'll most likely run into a few problems you'll need to figure out in this section."
+			]
+			dependencies: ["0E92F1D1BC057B77"]
+			id: "7990D33F57BDCC51"
+			tasks: [{
+				id: "3A2F4551F0F4C596"
+				type: "checkmark"
+				title: "The Beginning of, well....everything"
+			}]
+		}
+		{
+			title: "Chapter 1 Automated!"
+			icon: "create:primitive_mechanism"
+			x: 0.0d
+			y: 7.5d
+			subtitle: "Good job!"
+			description: ["The end of each chapter will reward you for your efforts with a large helping of useful items to do with that tier."]
+			dependencies: [
+				"211C3F83C6B553DB"
+				"45EF3A85FF079E90"
+			]
+			size: 3.0d
+			id: "1F1E08A4B488CC05"
+			tasks: [
+				{
+					id: "54356E2487083222"
+					type: "item"
+					item: "create:primitive_mechanism"
+				}
+				{
+					id: "67C9C17242954B23"
+					type: "checkmark"
+					title: "Automated"
+				}
+			]
+			rewards: [
+				{
+					id: "6A37D07C2514594E"
+					type: "item"
+					item: "create:primitive_mechanism"
+					count: 16
+				}
+				{
+					id: "1556A5F599CB59AC"
+					type: "item"
+					item: "create:cogwheel"
+					count: 32
+				}
+				{
+					id: "620929BA9BF0B3CC"
+					type: "item"
+					item: "create:large_cogwheel"
+					count: 16
+				}
+				{
+					id: "36D85A023F467C62"
+					type: "item"
+					item: "create:shaft"
+					count: 24
+				}
+				{
+					id: "7BD0EB911F2F4798"
+					type: "item"
+					item: "create:belt_connector"
+					count: 8
+				}
+				{
+					id: "6A3851588A784B32"
+					type: "item"
+					item: "create:andesite_casing"
+					count: 16
+				}
+			]
+		}
+		{
+			x: 0.0d
+			y: 2.5d
+			description: ["Making a cobble gen over a double compressed block of andesite will create an andesite generator."]
+			dependencies: ["7990D33F57BDCC51"]
+			id: "41C09F9CAEC986B3"
+			tasks: [{
+				id: "008169878338FD7A"
+				type: "item"
+				item: "minecraft:andesite"
+			}]
+		}
+		{
+			title: "Logs"
+			icon: "minecraft:oak_log"
+			x: -3.0d
+			y: 2.5d
+			subtitle: "Radial chassis' will be your friend here"
+			dependencies: ["7990D33F57BDCC51"]
+			id: "45EF3A85FF079E90"
+			tasks: [
+				{
+					id: "4960BD98DFA11AE6"
+					type: "item"
+					title: "Any #minecraft:logs"
+					item: {
+						id: "itemfilters:tag"
+						Count: 1b
+						tag: {
+							value: "minecraft:logs"
+						}
+					}
+				}
+				{
+					id: "0F606A59CF2CBB7A"
+					type: "checkmark"
+					title: "Automated"
+				}
+			]
+		}
+		{
+			title: "Cobblestone"
+			icon: "minecraft:cobblestone"
+			x: 3.0d
+			y: 1.5d
+			subtitle: "Automate a cobble gen"
+			dependencies: ["7990D33F57BDCC51"]
+			id: "6B265F23A4B9608B"
+			tasks: [
+				{
+					id: "15944A5DD8557A98"
+					type: "item"
+					item: "minecraft:cobblestone"
+				}
+				{
+					id: "4115BB4A6A61068F"
+					type: "checkmark"
+					title: "Automated"
+				}
+			]
+		}
+		{
+			icon: "create:andesite_alloy"
+			x: 0.0d
+			y: 4.5d
+			dependencies: [
+				"41C09F9CAEC986B3"
+				"1C1F169925AC8E35"
+			]
+			id: "211C3F83C6B553DB"
+			tasks: [
+				{
+					id: "6BBEE29F427FE295"
+					type: "item"
+					item: "create:andesite_alloy"
+				}
+				{
+					id: "7E025620894E8625"
+					type: "checkmark"
+					title: "Automated"
+				}
+			]
+		}
+		{
+			icon: "minecraft:gravel"
+			x: 3.0d
+			y: 3.0d
+			subtitle: "Put the cobble through a Millstone"
+			dependencies: ["6B265F23A4B9608B"]
+			id: "51F4DC24F3CC08C4"
+			tasks: [
+				{
+					id: "1E6B4AAFD4EFF7E2"
+					type: "item"
+					item: "minecraft:gravel"
+				}
+				{
+					id: "23FB53B73724F1A1"
+					type: "checkmark"
+					title: "Automated"
+				}
+			]
+		}
+		{
+			icon: "minecraft:iron_nugget"
+			x: 2.0d
+			y: 4.5d
+			subtitle: "Wash the Gravel to get iron"
+			dependencies: ["51F4DC24F3CC08C4"]
+			id: "1C1F169925AC8E35"
+			tasks: [
+				{
+					id: "72C30752967B7DE9"
+					type: "item"
+					item: "minecraft:iron_nugget"
+				}
+				{
+					id: "63A17BFF3158E087"
+					type: "checkmark"
+					title: "Automated"
+				}
+			]
+		}
+		{
+			x: -2.0d
+			y: 12.0d
+			description: ["That was...easy"]
+			dependencies: ["0C470E28693D857B"]
+			id: "3C5EC67C0E4EF5EB"
+			tasks: [{
+				id: "12D7463C5458BCC9"
+				type: "item"
+				icon: "create:compact_mechanism"
+				item: "create:compact_mechanism"
+			}]
+		}
+		{
+			icon: "create:mechanical_press"
+			x: -3.0d
+			y: 10.0d
+			dependencies: ["2B8B9AE163F2E4CD"]
+			id: "0C470E28693D857B"
+			tasks: [{
+				id: "33194392ADB460D6"
+				type: "checkmark"
+				title: "Press"
+			}]
+		}
+		{
+			x: -3.5d
+			y: 8.0d
+			subtitle: "Chapter 1A Start"
+			dependencies: ["50997324FEBF0855"]
+			hide: true
+			id: "2B8B9AE163F2E4CD"
+			tasks: [{
+				id: "635E4C19B8ABE31C"
+				type: "checkmark"
+				title: "Storage Upgrades"
+			}]
+		}
+		{
+			x: 1.5d
+			y: 12.0d
+			subtitle: "Mix Primitive Mechanism with Latex"
+			description: [
+				"Time for fluids, hehe"
+				""
+				"Yes, I know it looks like it has copper on it. The texture looks nice shhhhh"
+			]
+			dependencies: [
+				"4723D84363F22D9E"
+				"41DF68D3DF02973F"
+			]
+			id: "71AA5B8DF152B6A8"
+			tasks: [{
+				id: "5E6620AE9E15A0BA"
+				type: "item"
+				item: "create:watertight_mechanism"
+			}]
+		}
+		{
+			x: 3.5d
+			y: 10.0d
+			description: ["You'll need specifically Jungle wood for this"]
+			dependencies: ["4F05FA3D8CBFEB51"]
+			id: "16AB8E6CDF9437C2"
+			tasks: [{
+				id: "7FBFAE799E1E0017"
+				type: "item"
+				item: "minecraft:jungle_log"
+			}]
+		}
+		{
+			x: 3.0d
+			y: 8.0d
+			subtitle: "Chapter 1B Start"
+			dependencies: ["0DBAAE1D273C2B1F"]
+			hide: true
+			id: "4F05FA3D8CBFEB51"
+			tasks: [{
+				id: "74E28E0B5FA2D08A"
+				type: "checkmark"
+				title: "Fluid Manipulation"
+			}]
+		}
+		{
+			icon: "thermal:latex_bucket"
+			x: 3.5d
+			y: 12.0d
+			subtitle: "Mix Jungle Log with Water"
+			dependencies: [
+				"16AB8E6CDF9437C2"
+				"41DF68D3DF02973F"
+			]
+			id: "4723D84363F22D9E"
+			tasks: [{
+				id: "397AFEC470541B03"
+				type: "checkmark"
+				title: "Latex"
+			}]
+		}
+		{
+			icon: "create:mechanical_mixer"
+			x: 2.0d
+			y: 10.5d
+			dependencies: ["4F05FA3D8CBFEB51"]
+			id: "41DF68D3DF02973F"
+			tasks: [{
+				id: "7BD194822A0387E4"
+				type: "checkmark"
+				title: "Mixer"
+			}]
+		}
+	]
+	quest_links: [ ]
+}

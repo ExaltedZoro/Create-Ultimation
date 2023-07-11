@@ -1,0 +1,425 @@
+{
+	id: "257FD0EBEA2D338A"
+	group: "005739175477BC81"
+	order_index: 0
+	filename: "chapter_3_thermal_capabilities"
+	title: "The Thermal Mechanism"
+	icon: "create:thermal_mechanism"
+	default_quest_shape: ""
+	default_hide_dependency_lines: false
+	quests: [
+		{
+			x: 0.0d
+			y: -3.0d
+			subtitle: "Chapter 3 Start"
+			description: ["Now that you have access to more advanced filtering, it's time to delve into the world of electric machines with the Thermal Mechanism, have fun!"]
+			dependencies: ["521D7357B9D91A5F"]
+			id: "2D64D87F021A7A04"
+			tasks: [{
+				id: "3F77E350827AFE88"
+				type: "checkmark"
+				title: "Chapter 3: Thermal Capabilities"
+			}]
+		}
+		{
+			title: "Chapter 3 Automated!"
+			icon: "create:thermal_mechanism"
+			x: 0.0d
+			y: 10.5d
+			subtitle: "Amazing!"
+			description: ["You'll also want access to Tin from now on. You can automate it the same way as Nickel, except for the sieve must be waterlogged."]
+			dependencies: [
+				"1F9F08648DD9D3E3"
+				"0A8925F6C3F7BCB2"
+				"30F2FDE85F232714"
+			]
+			size: 3.0d
+			id: "38D9DFBFE2F0D5E6"
+			tasks: [
+				{
+					id: "28A36CBC5569AC83"
+					type: "item"
+					item: "create:thermal_mechanism"
+				}
+				{
+					id: "238A983DB7E8966E"
+					type: "checkmark"
+					title: "Automated"
+				}
+			]
+			rewards: [
+				{
+					id: "22E9E524CC3E8212"
+					type: "item"
+					item: "create:thermal_mechanism"
+					count: 16
+				}
+				{
+					id: "7592B48131CF122C"
+					type: "item"
+					item: "thermal:machine_frame"
+					count: 4
+				}
+				{
+					id: "5ACC4BAF6D2A24AF"
+					type: "item"
+					item: "thermal:upgrade_augment_1"
+					count: 4
+				}
+				{
+					id: "1862FED7E47DF80B"
+					type: "item"
+					item: "thermal:machine_speed_augment"
+					count: 12
+				}
+			]
+		}
+		{
+			icon: "thermal:rf_coil"
+			x: 2.5d
+			y: 8.5d
+			subtitle: "Combine the Crystal with some Gold Nuggets"
+			dependencies: [
+				"2D93181A07350A7A"
+				"17F22135F546D878"
+			]
+			id: "1F9F08648DD9D3E3"
+			tasks: [
+				{
+					id: "3456577B33F1B697"
+					type: "item"
+					item: "thermal:rf_coil"
+				}
+				{
+					id: "6C5590B46009F5EE"
+					type: "checkmark"
+					title: "Automated"
+				}
+			]
+		}
+		{
+			title: "Molten Invar"
+			icon: "tconstruct:molten_invar_bucket"
+			x: -3.0d
+			y: 8.5d
+			dependencies: [
+				"3C6A01E8070368EC"
+				"0998D4CEE5BBC412"
+			]
+			id: "0A8925F6C3F7BCB2"
+			tasks: [{
+				id: "78C9C7C5F8EF5F85"
+				type: "checkmark"
+				title: "Automated"
+			}]
+		}
+		{
+			icon: "ultimation:redstone_crystal"
+			x: 3.0d
+			y: 6.0d
+			subtitle: "Cast Destablized Redstone in a Gem Cast"
+			dependencies: ["2F8083AEE460F9B1"]
+			id: "2D93181A07350A7A"
+			tasks: [
+				{
+					id: "21DB1989DAA11168"
+					type: "item"
+					item: "ultimation:redstone_crystal"
+				}
+				{
+					id: "26AE999EC99E06A1"
+					type: "checkmark"
+					title: "Automated"
+				}
+			]
+		}
+		{
+			title: "Molten Gold"
+			icon: "tconstruct:molten_gold_bucket"
+			x: 5.5d
+			y: 6.0d
+			dependencies: ["3048896E2132CBC3"]
+			id: "17F22135F546D878"
+			tasks: [{
+				id: "00E43030B17A1634"
+				type: "checkmark"
+				title: "Automated"
+			}]
+		}
+		{
+			title: "Gold"
+			icon: "minecraft:raw_gold"
+			x: 5.5d
+			y: 2.5d
+			description: ["There are also many ways of processing this. Again, whatever you find best, go for it."]
+			dependencies: ["5DEB0CD1665F65A6"]
+			id: "3048896E2132CBC3"
+			tasks: [
+				{
+					id: "63AABE3AC8900247"
+					type: "item"
+					item: "minecraft:raw_gold"
+				}
+				{
+					id: "56E4E2EEBF9CF19D"
+					type: "checkmark"
+					title: "Automated"
+				}
+			]
+		}
+		{
+			icon: "create:ochrum"
+			x: 3.0d
+			y: 1.0d
+			dependencies: [
+				"627B5E13C41B7EFA"
+				"084B9522C2C15496"
+				"53598A85BA426F31"
+			]
+			id: "5DEB0CD1665F65A6"
+			tasks: [
+				{
+					id: "57E10A7828E74481"
+					type: "item"
+					item: "create:ochrum"
+				}
+				{
+					id: "35708A693A613620"
+					type: "checkmark"
+					title: "Automated"
+				}
+			]
+		}
+		{
+			icon: "minecraft:orange_dye"
+			x: 1.5d
+			y: 0.5d
+			dependencies: ["6C5207B600C5D1AD"]
+			id: "627B5E13C41B7EFA"
+			tasks: [
+				{
+					id: "445F9910F53AF995"
+					type: "item"
+					item: "minecraft:orange_dye"
+				}
+				{
+					id: "04773E5FC0472DFE"
+					type: "checkmark"
+					title: "Automated"
+				}
+			]
+		}
+		{
+			title: "Deepslate"
+			icon: "minecraft:cobbled_deepslate"
+			x: 3.0d
+			y: -0.5d
+			subtitle: "Automated in Chapter 2"
+			hide_dependency_lines: true
+			dependencies: ["2D64D87F021A7A04"]
+			id: "084B9522C2C15496"
+			tasks: [{
+				id: "42D90B2AB73BF3A4"
+				type: "checkmark"
+				title: "Automated"
+			}]
+		}
+		{
+			title: "Lava"
+			icon: "minecraft:lava_bucket"
+			x: 5.5d
+			y: 0.0d
+			subtitle: "Automated in Chapter 2"
+			hide_dependency_lines: true
+			dependencies: ["2D64D87F021A7A04"]
+			id: "53598A85BA426F31"
+			tasks: [{
+				id: "1EE00F0417D890C0"
+				type: "checkmark"
+				title: "Automated"
+			}]
+		}
+		{
+			title: "Dye Base"
+			icon: "mekanism:dye_base"
+			x: 0.5d
+			y: -0.5d
+			subtitle: "Automated in Chapter 2"
+			hide_dependency_lines: true
+			dependencies: ["2D64D87F021A7A04"]
+			id: "6C5207B600C5D1AD"
+			tasks: [{
+				id: "7759669722319A7F"
+				type: "checkmark"
+				title: "Automated"
+			}]
+		}
+		{
+			icon: "minecraft:sand"
+			x: -2.0d
+			y: 0.0d
+			subtitle: "Automated in Chapter 2"
+			hide_dependency_lines: true
+			dependencies: ["2D64D87F021A7A04"]
+			id: "2C35A603B6A11E07"
+			tasks: [
+				{
+					id: "2B0832B9022E31D2"
+					type: "item"
+					item: "minecraft:sand"
+				}
+				{
+					id: "34CD2EEA278C8C31"
+					type: "checkmark"
+					title: "Automated"
+				}
+			]
+		}
+		{
+			icon: "minecraft:red_sand"
+			x: 0.0d
+			y: 2.0d
+			subtitle: "Bulk Smoke Sand into Red Sand"
+			dependencies: ["2C35A603B6A11E07"]
+			id: "3FE0C98829E4A5F8"
+			tasks: [
+				{
+					id: "38D9AACFF4F21928"
+					type: "item"
+					item: "minecraft:red_sand"
+				}
+				{
+					id: "7EBC2F9D2E4843B6"
+					type: "checkmark"
+					title: "Automated"
+				}
+			]
+		}
+		{
+			icon: "minecraft:redstone"
+			x: 1.5d
+			y: 3.5d
+			subtitle: "Wash Red Sand to get Redstone Dust"
+			dependencies: ["3FE0C98829E4A5F8"]
+			id: "23045918FD83576E"
+			tasks: [
+				{
+					id: "3E803EEDF4716ABF"
+					type: "item"
+					item: "minecraft:redstone"
+				}
+				{
+					id: "7E8602D46E820878"
+					type: "checkmark"
+					title: "Automated"
+				}
+			]
+		}
+		{
+			title: "Destablized Redstone"
+			icon: "thermal:redstone_bucket"
+			x: 1.0d
+			y: 5.5d
+			subtitle: "Melt Redstone"
+			dependencies: ["23045918FD83576E"]
+			id: "2F8083AEE460F9B1"
+			tasks: [{
+				id: "4BB101A290FDED2B"
+				type: "checkmark"
+				title: "Automated"
+			}]
+		}
+		{
+			title: "Nickel"
+			icon: "thermal:raw_nickel"
+			x: -4.5d
+			y: 2.0d
+			subtitle: "Sift Sand in an Andesite Mesh"
+			dependencies: ["2C35A603B6A11E07"]
+			id: "04EE41B6E9037FC2"
+			tasks: [
+				{
+					id: "374FC0AA57CEBDD6"
+					type: "item"
+					item: "thermal:raw_nickel"
+				}
+				{
+					id: "39D8041685ADDD3A"
+					type: "checkmark"
+					title: "Automated"
+				}
+			]
+		}
+		{
+			title: "Molten Nickel"
+			icon: "tconstruct:molten_nickel_bucket"
+			x: -5.0d
+			y: 5.0d
+			subtitle: "Melt Nickel"
+			dependencies: ["04EE41B6E9037FC2"]
+			id: "3C6A01E8070368EC"
+			tasks: [{
+				id: "5BCDAB4DFB3C043E"
+				type: "checkmark"
+				title: "Automated"
+			}]
+		}
+		{
+			title: "Molten Iron"
+			icon: "tconstruct:molten_iron_bucket"
+			x: -6.0d
+			y: 7.0d
+			subtitle: "Automated in Chapter 2"
+			hide_dependency_lines: true
+			dependencies: ["2D64D87F021A7A04"]
+			id: "0998D4CEE5BBC412"
+			tasks: [{
+				id: "43A4C7D2556B6EA8"
+				type: "checkmark"
+				title: "Automated"
+			}]
+		}
+		{
+			title: "New Technology! Bases!"
+			x: 4.0d
+			y: 10.5d
+			subtitle: "What????"
+			description: [
+				"Now that we have access to electric machines, we can start really getting down to business."
+				""
+				"Bases are the new and improved recipes for mechanisms that were mentioned wayyy back."
+				"Not only do they act as cheaper starting points for mechanism assemblies, they also remove a step from the assembly itself!"
+				""
+				"For now, you only have access to bases for the Primitive and Precision Mechanisms. No Thermal base just yet :("
+			]
+			dependencies: ["38D9DFBFE2F0D5E6"]
+			size: 1.5d
+			id: "0C3FA1C5C90DC9AD"
+			tasks: [
+				{
+					id: "24500C96F3DFC6DB"
+					type: "item"
+					item: "create:primitive_base"
+				}
+				{
+					id: "72E1DA3F253D7D03"
+					type: "item"
+					item: "create:precision_base"
+				}
+			]
+		}
+		{
+			icon: "create:precision_mechanism"
+			x: 0.0d
+			y: 7.5d
+			dependencies: ["39E68579F97A2ECA"]
+			id: "30F2FDE85F232714"
+			tasks: [{
+				id: "62A4DF5C59A7FAAD"
+				type: "checkmark"
+				title: "Precision Mechanism"
+			}]
+		}
+	]
+	quest_links: [ ]
+}

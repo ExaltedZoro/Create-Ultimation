@@ -1,0 +1,9 @@
+{
+	chapter_groups: [
+		{ id: "7F88F85128EACFE6", title: "Chapter 1: Andesite Beginnings" }
+		{ id: "2577373B7BD52BC3", title: "Chapter 2: The Precision of Brass" }
+		{ id: "005739175477BC81", title: "Chapter 3: Thermal Capabilities" }
+		{ id: "28FBC8F9134D8D8D", title: "Chapter 4: Digitizing your Chests" }
+		{ id: "19E48B7F0FDBE485", title: "Chapter 5: Mekanisms Galore" }
+	]
+}

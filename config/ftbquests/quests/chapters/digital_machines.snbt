@@ -1,0 +1,22 @@
+{
+	id: "411A34EC8F67A2CE"
+	group: "28FBC8F9134D8D8D"
+	order_index: 1
+	filename: "digital_machines"
+	title: "Digital Machines"
+	icon: "ae2:controller"
+	default_quest_shape: ""
+	default_hide_dependency_lines: false
+	quests: [{
+		x: 0.0d
+		y: 0.0d
+		dependencies: ["1B8C087DDFE9D7D3"]
+		id: "1C4281D74C7C6FE9"
+		tasks: [{
+			id: "38BC056D782402B7"
+			type: "checkmark"
+			title: "Digital Machines"
+		}]
+	}]
+	quest_links: [ ]
+}

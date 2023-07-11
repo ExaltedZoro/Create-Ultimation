@@ -1,0 +1,538 @@
+{
+	id: "06611FB0070C1967"
+	group: "28FBC8F9134D8D8D"
+	order_index: 0
+	filename: "the_digital_mechanism"
+	title: "The Digital Mechanism"
+	icon: "create:digital_mechanism"
+	default_quest_shape: ""
+	default_hide_dependency_lines: false
+	quests: [
+		{
+			x: 0.0d
+			y: -2.0d
+			subtitle: "Chapter 4 Start"
+			description: [
+				"This chapter will involve something a little different."
+				""
+				"Introducing...........External Sequencing! Courtesy of Emperdog on the KubeJS Discord."
+				""
+				"This chapter will involve more complex production lines in the form of new and improved Sequenced Assemblies. Don't don't worry, I'm here to guide you through it."
+			]
+			dependencies: ["719E9E0C5BD36F67"]
+			id: "793E6920A5CBDEAB"
+			tasks: [{
+				id: "5743536C142356A2"
+				type: "checkmark"
+				title: "Chapter 4: Digitizing your Chests"
+			}]
+		}
+		{
+			icon: "create:digital_mechanism"
+			x: 0.0d
+			y: 12.0d
+			subtitle: "Woooooo!"
+			description: ["With this, you can start creating your own digital storage system. Go Apply those Energistics!"]
+			dependencies: [
+				"438F62095E01D30A"
+				"49F6D13DA052DEED"
+				"56E84B87217B81AB"
+			]
+			size: 3.0d
+			id: "1B8C087DDFE9D7D3"
+			tasks: [
+				{
+					id: "68E69E2BE14626AC"
+					type: "item"
+					item: "create:digital_mechanism"
+				}
+				{
+					id: "3A5D84A93F29A63E"
+					type: "checkmark"
+					title: "Automated"
+				}
+			]
+			rewards: [
+				{
+					id: "50591D63C0D756B2"
+					type: "item"
+					item: "create:digital_mechanism"
+					count: 16
+				}
+				{
+					id: "2D0A9C60ADFA1A67"
+					type: "item"
+					item: "ae2:formation_core"
+					count: 16
+				}
+				{
+					id: "7360160301AC0428"
+					type: "item"
+					item: "ae2:annihilation_core"
+					count: 16
+				}
+				{
+					id: "5E5F1299AF2D0481"
+					type: "item"
+					item: "ae2:fluix_glass_cable"
+					count: 64
+				}
+			]
+		}
+		{
+			icon: "ae2:silicon"
+			x: -3.5d
+			y: 10.0d
+			dependencies: ["1D95D07F7F46C0DD"]
+			id: "49F6D13DA052DEED"
+			tasks: [
+				{
+					id: "5A81B5FF429DED8F"
+					type: "item"
+					item: "ae2:silicon"
+				}
+				{
+					id: "0D9885C533EA6875"
+					type: "checkmark"
+					title: "Automated"
+				}
+			]
+		}
+		{
+			icon: "create:thermal_mechanism"
+			x: 0.0d
+			y: 9.0d
+			dependencies: ["38D9DFBFE2F0D5E6"]
+			id: "438F62095E01D30A"
+			tasks: [{
+				id: "19C7B7F1D67105CC"
+				type: "checkmark"
+				title: "Thermal Mechanism"
+			}]
+		}
+		{
+			icon: "ae2:certus_quartz_crystal"
+			x: 2.5d
+			y: 8.0d
+			dependencies: [
+				"551218B482C0A918"
+				"53582E37A90D93DA"
+			]
+			id: "4521C0F1AF536719"
+			tasks: [
+				{
+					id: "234CB94D4B1099C8"
+					type: "item"
+					item: "ae2:certus_quartz_crystal"
+				}
+				{
+					id: "6B2B9F8C2DDFA940"
+					type: "checkmark"
+					title: "Automated"
+				}
+			]
+		}
+		{
+			icon: "ultimation:blue_quartz"
+			x: 1.5d
+			y: 4.0d
+			subtitle: "Mix Nether Quartz with Water"
+			dependencies: [
+				"5867838F89DA93FB"
+				"4B2AE81A95363840"
+			]
+			id: "551218B482C0A918"
+			tasks: [
+				{
+					id: "6543CB2F3A6F17D3"
+					type: "item"
+					item: "ultimation:blue_quartz"
+				}
+				{
+					id: "33CE46820C7A5B02"
+					type: "checkmark"
+					title: "Automated"
+				}
+			]
+		}
+		{
+			icon: "minecraft:quartz"
+			x: 3.5d
+			y: 2.5d
+			subtitle: "Decisions, decisions..."
+			description: [
+				"There's a couple of ways of automating this."
+				""
+				"1. Washing Crushed Gold Ore."
+				"This way does give you much less yield on your gold than you would otherwise get, but you have a good change of getting some Nether Quartz out of it too."
+				""
+				"2. Washing Soul Sand"
+				"Haunting Sand will give you Soul Sand. Washing this Soul Sand gives you a low chance at multiple Nether Quartz and a very low chance to get a tiny amount of gold."
+				""
+				"Your choice :)"
+			]
+			dependencies: [
+				"1E7D5ECFF2D1F2DA"
+				"743AFDF44671DCCF"
+			]
+			dependency_requirement: "one_completed"
+			id: "5867838F89DA93FB"
+			tasks: [
+				{
+					id: "523D3CB3C71D0A87"
+					type: "item"
+					item: "minecraft:quartz"
+				}
+				{
+					id: "2A9232A15DB790B1"
+					type: "checkmark"
+					title: "Automated"
+				}
+			]
+		}
+		{
+			icon: "create:mechanical_press"
+			x: -6.5d
+			y: 7.5d
+			subtitle: "Compact in a Heated Basin"
+			description: ["This removes the small amount of impurity that's left"]
+			dependencies: ["345BC1A908A11582"]
+			id: "1D95D07F7F46C0DD"
+			tasks: [{
+				id: "2252F434AFA5F5D5"
+				type: "checkmark"
+				title: "Sequence Step 5"
+			}]
+		}
+		{
+			icon: "create:spout"
+			x: -2.5d
+			y: 6.5d
+			subtitle: "Spout the Pure Silicon back onto it"
+			dependencies: [
+				"49262C846B36BC94"
+				"4F0467EEAD9297DB"
+			]
+			id: "345BC1A908A11582"
+			tasks: [{
+				id: "39852CE1506B8B18"
+				type: "checkmark"
+				title: "Sequence Step 4"
+			}]
+		}
+		{
+			icon: "thermal:machine_centrifuge"
+			x: -6.5d
+			y: 4.5d
+			subtitle: "Centrifuge the Fine Sand grains off of it"
+			dependencies: ["602B17CB4CE8CFA0"]
+			id: "49262C846B36BC94"
+			tasks: [{
+				id: "1B4BB67C339BA5F0"
+				type: "checkmark"
+				title: "Sequence Step 3"
+			}]
+		}
+		{
+			title: "Sequence Step 2"
+			icon: "create:mechanical_press"
+			x: -2.5d
+			y: 3.0d
+			subtitle: "Just press it, WAM"
+			dependencies: ["08C706F51FCB3F8F"]
+			id: "602B17CB4CE8CFA0"
+			tasks: [{
+				id: "4A8FD5EFC902F36B"
+				type: "checkmark"
+				title: "Sequence Step "
+			}]
+		}
+		{
+			icon: "create:crushing_wheel"
+			x: -6.5d
+			y: 1.5d
+			subtitle: "Crush some Sand"
+			dependencies: [
+				"1904E2010E53D8E7"
+				"1A3CC2927C66AF89"
+			]
+			id: "08C706F51FCB3F8F"
+			tasks: [{
+				id: "5F2DF3B9F381B86F"
+				type: "checkmark"
+				title: "Sequence Step 1"
+			}]
+		}
+		{
+			title: "Silicon Processing"
+			icon: "ae2:silicon"
+			x: -4.5d
+			y: -0.5d
+			description: ["Silicon is the most involved single item process so far. Not too bad, but still pretty involved."]
+			hide_dependency_lines: true
+			dependencies: ["793E6920A5CBDEAB"]
+			id: "1904E2010E53D8E7"
+			tasks: [{
+				id: "2B07C53584D048E3"
+				type: "checkmark"
+				title: "I understand!"
+			}]
+		}
+		{
+			icon: "minecraft:sand"
+			x: -1.0d
+			y: 0.5d
+			subtitle: "Automated in Chapter 2"
+			hide_dependency_lines: true
+			dependencies: ["793E6920A5CBDEAB"]
+			id: "1A3CC2927C66AF89"
+			tasks: [{
+				id: "1EE3131BD21061E1"
+				type: "checkmark"
+				title: "Sand"
+			}]
+		}
+		{
+			x: -3.5d
+			y: 4.5d
+			subtitle: "Siphon Pure Silicon out of the Sand"
+			dependencies: ["49262C846B36BC94"]
+			id: "4F0467EEAD9297DB"
+			tasks: [{
+				id: "113CF77D89DD8DAF"
+				type: "item"
+				item: "thermal:machine_refinery"
+			}]
+		}
+		{
+			icon: "ae2:fluix_crystal"
+			x: 3.5d
+			y: 10.0d
+			dependencies: [
+				"4521C0F1AF536719"
+				"554BBA1FCF5CD411"
+				"6015C06A9BFAE4DA"
+			]
+			id: "56E84B87217B81AB"
+			tasks: [
+				{
+					id: "1F9C4BD794287A6D"
+					type: "item"
+					item: "ae2:fluix_crystal"
+				}
+				{
+					id: "3E8F080DA838FECE"
+					type: "checkmark"
+					title: "Automated"
+				}
+			]
+		}
+		{
+			title: "Water"
+			icon: "minecraft:water_bucket"
+			x: 0.5d
+			y: 2.5d
+			subtitle: "This is fairly easy"
+			hide_dependency_lines: true
+			dependencies: ["793E6920A5CBDEAB"]
+			id: "4B2AE81A95363840"
+			tasks: [{
+				id: "7E8990A3BA02B729"
+				type: "checkmark"
+				title: "Automated"
+			}]
+		}
+		{
+			icon: "create:rose_quartz"
+			x: 5.5d
+			y: 4.0d
+			subtitle: "Mix Nether Quartz with Lava"
+			dependencies: [
+				"5867838F89DA93FB"
+				"632FBEDBC18FC0FC"
+			]
+			id: "7B6587FF7A985FFD"
+			tasks: [
+				{
+					id: "5B512AC40F658A7B"
+					type: "item"
+					item: "create:rose_quartz"
+				}
+				{
+					id: "706B9B65A6E5994C"
+					type: "checkmark"
+					title: "Automated"
+				}
+			]
+		}
+		{
+			icon: "create:polished_rose_quartz"
+			x: 5.0d
+			y: 6.5d
+			dependencies: [
+				"7B6587FF7A985FFD"
+				"53582E37A90D93DA"
+			]
+			id: "554BBA1FCF5CD411"
+			tasks: [
+				{
+					id: "72536F2818441AC6"
+					type: "item"
+					item: "create:polished_rose_quartz"
+				}
+				{
+					id: "7468FF07CD6DEBA2"
+					type: "checkmark"
+					title: "Automated"
+				}
+			]
+		}
+		{
+			title: "Lava"
+			icon: "minecraft:lava_bucket"
+			x: 6.5d
+			y: 2.5d
+			subtitle: "Automated in Chapter 2"
+			description: [
+				"Time for TRAINS!"
+				""
+				"Lava can be automated very powerfully with trains. Because they can travel through Nether Portals!"
+				""
+				"If you haven't automated Lava yet, I'd suggest you do it this way."
+				""
+				"If you also don't know how to setup trains, I'd highly suggest looking through the Ponder scenes for them."
+			]
+			hide_dependency_lines: true
+			dependencies: ["793E6920A5CBDEAB"]
+			id: "632FBEDBC18FC0FC"
+			tasks: [{
+				id: "65F0962D4AB717B1"
+				type: "checkmark"
+				title: "Automated"
+			}]
+		}
+		{
+			x: 1.5d
+			y: 1.0d
+			dependencies: ["1A3CC2927C66AF89"]
+			id: "1E7D5ECFF2D1F2DA"
+			tasks: [{
+				id: "3A69A5C82E49DFC6"
+				type: "item"
+				item: "minecraft:soul_sand"
+			}]
+		}
+		{
+			icon: "create:crushed_raw_gold"
+			x: 5.5d
+			y: 1.0d
+			dependencies: ["088A871266C61E1A"]
+			id: "743AFDF44671DCCF"
+			tasks: [
+				{
+					id: "1A282000ED3730CF"
+					type: "item"
+					item: "create:crushed_raw_gold"
+				}
+				{
+					id: "2CF554A43ABC47ED"
+					type: "checkmark"
+					title: "Automated"
+				}
+			]
+		}
+		{
+			icon: "minecraft:raw_gold"
+			x: 7.5d
+			y: 0.0d
+			dependencies: ["26E70D97AC12DCB3"]
+			id: "088A871266C61E1A"
+			tasks: [
+				{
+					id: "0BABF87393614CD4"
+					type: "item"
+					item: "minecraft:raw_gold"
+				}
+				{
+					id: "473DE43482F46AD8"
+					type: "checkmark"
+					title: "Automated"
+				}
+			]
+		}
+		{
+			title: "Ochrum"
+			icon: "create:ochrum"
+			x: 3.5d
+			y: -0.5d
+			subtitle: "Automated in Chapter 3"
+			hide_dependency_lines: true
+			dependencies: ["793E6920A5CBDEAB"]
+			id: "26E70D97AC12DCB3"
+			tasks: [{
+				id: "6AD8CBE910EE7CB3"
+				type: "checkmark"
+				title: "Automated"
+			}]
+		}
+		{
+			title: "Catalytic Reclaimation"
+			icon: "minecraft:redstone"
+			x: 3.5d
+			y: 11.5d
+			description: [
+				"You've probably noticed that you get an extra output from the Fluix Crystal recipe in the form of a little Redstone. That's because Redstone is a catalyst in this system!"
+				""
+				"Well, with some extra processing it is. Take that Redstone output and cast it back into a crystal. Absolutely no resource cost!"
+			]
+			dependencies: ["56E84B87217B81AB"]
+			id: "187D606BD9C53D8E"
+			tasks: [{
+				id: "3596ECF5EC3469C3"
+				type: "checkmark"
+				title: "Catalytic Reclamation"
+			}]
+		}
+		{
+			title: "Energetic Redstone Crystal"
+			icon: "ultimation:redstone_crystal"
+			x: 5.5d
+			y: 9.0d
+			subtitle: "Automated in Chapter 3"
+			hide_dependency_lines: true
+			dependencies: ["793E6920A5CBDEAB"]
+			id: "6015C06A9BFAE4DA"
+			tasks: [{
+				id: "2763DCD98B00B308"
+				type: "checkmark"
+				title: "Automated"
+			}]
+		}
+		{
+			title: "Sandpaper"
+			x: 3.5d
+			y: 5.0d
+			description: [
+				"Sandpaper is required to polish the two colours of Quartz. Regular sandpaper will polish 8 items before breaking and diamond sandpaper will polish 1024"
+				""
+				"Once you reach the end of Chapter 5, the need for this will be removed."
+			]
+			hide_dependency_lines: true
+			dependencies: ["793E6920A5CBDEAB"]
+			id: "53582E37A90D93DA"
+			tasks: [{
+				id: "41F98A59921CBA45"
+				type: "item"
+				title: "Any #create:sandpaper"
+				item: {
+					id: "itemfilters:tag"
+					Count: 1b
+					tag: {
+						value: "create:sandpaper"
+					}
+				}
+			}]
+		}
+	]
+	quest_links: [ ]
+}

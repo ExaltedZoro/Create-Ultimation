@@ -1,0 +1,599 @@
+{
+	id: "24CF6EDB75B988EE"
+	group: "2577373B7BD52BC3"
+	order_index: 0
+	filename: "chapter_2_the_precision_of_brass"
+	title: "The Precision Mechanism"
+	icon: "create:precision_mechanism"
+	default_quest_shape: ""
+	default_hide_dependency_lines: false
+	quests: [
+		{
+			title: "Chapter 2: The Precision of Brass"
+			x: 0.0d
+			y: -7.0d
+			subtitle: "Chapter 2 Start"
+			dependencies: ["00D0BEF18AEAE4D0"]
+			id: "74D8887A862D56AE"
+			tasks: [{
+				id: "2F54FCD3DCEE9938"
+				type: "checkmark"
+				title: "Now things get interesting"
+			}]
+		}
+		{
+			title: "Chapter 2 Automated!"
+			icon: "create:precision_mechanism"
+			x: 0.0d
+			y: 8.5d
+			subtitle: "Awesome!"
+			description: ["With these mechanisms you can make much more advanced mechanical components, which allow for things like filtering and automated crafting!"]
+			dependencies: [
+				"6A208F9CB334AD2F"
+				"0D43EC235AB4327B"
+				"56B131EC87935480"
+			]
+			size: 3.0d
+			id: "39E68579F97A2ECA"
+			tasks: [
+				{
+					id: "75238FEAB72D0D01"
+					type: "item"
+					item: "create:precision_mechanism"
+				}
+				{
+					id: "0EB305F139CFDD63"
+					type: "checkmark"
+					title: "Automated"
+				}
+			]
+			rewards: [
+				{
+					id: "694F3BA40BDF4F06"
+					type: "item"
+					item: "create:precision_mechanism"
+					count: 16
+				}
+				{
+					id: "3F598845DF55A42E"
+					type: "item"
+					item: "create:brass_funnel"
+					count: 16
+				}
+				{
+					id: "1ED0C389F3ECE8F8"
+					type: "item"
+					item: "create:brass_tunnel"
+					count: 16
+				}
+				{
+					id: "7E3414EDCA141C04"
+					type: "item"
+					item: "create:rotation_speed_controller"
+				}
+				{
+					id: "174010FD4BDC2458"
+					type: "item"
+					item: "create:brass_casing"
+					count: 16
+				}
+			]
+		}
+		{
+			icon: "create:primitive_mechanism"
+			x: 0.0d
+			y: 5.5d
+			dependencies: ["1F1E08A4B488CC05"]
+			id: "56B131EC87935480"
+			tasks: [{
+				id: "6CD58F4112941DCC"
+				type: "checkmark"
+				title: "Primitive Mechanism"
+			}]
+		}
+		{
+			title: "Molten Brass"
+			icon: "tconstruct:molten_brass_bucket"
+			x: -2.5d
+			y: 6.5d
+			dependencies: [
+				"29779D67FCF62C47"
+				"24487DFDF6AC1ED5"
+			]
+			id: "0D43EC235AB4327B"
+			tasks: [{
+				id: "491BF8BC327D42B7"
+				type: "checkmark"
+				title: "Automated"
+			}]
+		}
+		{
+			icon: "create:electron_tube"
+			x: 2.0d
+			y: 5.5d
+			dependencies: [
+				"76192C8620EF41CE"
+				"21F8F48590981683"
+			]
+			id: "6A208F9CB334AD2F"
+			tasks: [
+				{
+					id: "0FF2ACAB1CD0DDBE"
+					type: "item"
+					item: "create:electron_tube"
+				}
+				{
+					id: "1486A0FAEDEED4E8"
+					type: "checkmark"
+					title: "Automated"
+				}
+			]
+		}
+		{
+			x: 7.0d
+			y: 4.5d
+			subtitle: "Already automated in Chapter 1"
+			dependencies: ["00D0BEF18AEAE4D0"]
+			id: "49A2FC5EF6888830"
+			tasks: [{
+				id: "5D550EEFCF3B7C4C"
+				type: "item"
+				item: "minecraft:iron_nugget"
+			}]
+		}
+		{
+			icon: "ultimation:red_amethyst"
+			x: 2.0d
+			y: 3.0d
+			dependencies: [
+				"18153D73879CEF1E"
+				"4746CB961921CCE5"
+			]
+			id: "76192C8620EF41CE"
+			tasks: [
+				{
+					id: "6BF8EBD8C4E1A590"
+					type: "item"
+					item: "ultimation:red_amethyst"
+				}
+				{
+					id: "0FDD2DFBDB6EE135"
+					type: "checkmark"
+					title: "Automated"
+				}
+			]
+		}
+		{
+			icon: "minecraft:amethyst_shard"
+			x: 2.0d
+			y: 1.0d
+			description: ["There's a few different ways of processing Amethyst Clusters. Millstone, Crushing Wheels or melting. All are perfectly valid."]
+			dependencies: ["5544EB9647E196C4"]
+			id: "4746CB961921CCE5"
+			tasks: [
+				{
+					id: "5A0D370FA67F6448"
+					type: "item"
+					item: "minecraft:amethyst_shard"
+				}
+				{
+					id: "59AA200E505BC215"
+					type: "checkmark"
+					title: "Automated"
+				}
+			]
+		}
+		{
+			icon: "minecraft:red_dye"
+			x: 0.0d
+			y: 3.0d
+			dependencies: ["15CD92CE4F9B5036"]
+			id: "18153D73879CEF1E"
+			tasks: [
+				{
+					id: "3E5E6DBEC1067F57"
+					type: "item"
+					item: "minecraft:red_dye"
+				}
+				{
+					id: "44575B20057F0781"
+					type: "checkmark"
+					title: "Automated"
+				}
+			]
+		}
+		{
+			icon: "mekanism:dye_base"
+			x: 0.5d
+			y: -2.5d
+			description: ["Mixing this with any dye will turn it into a copy of that dye"]
+			dependencies: ["7FC18BB1A8DD320F"]
+			id: "15CD92CE4F9B5036"
+			tasks: [
+				{
+					id: "0DE46C24B42FDF7C"
+					type: "item"
+					item: "mekanism:dye_base"
+				}
+				{
+					id: "14A28CF2472588EC"
+					type: "checkmark"
+					title: "Automated"
+				}
+			]
+		}
+		{
+			x: 3.5d
+			y: 0.5d
+			description: [
+				"Step 1: Spout Water"
+				"Step 2: Spout Water"
+				"Step 3: Spout Water"
+				"Step 4: Spout Water"
+				"Step 5: Grofit"
+			]
+			dependencies: ["470ADF2D9CCC8FB6"]
+			id: "5544EB9647E196C4"
+			tasks: [{
+				id: "66A4E4D86BFFCE13"
+				type: "item"
+				item: "minecraft:amethyst_cluster"
+			}]
+		}
+		{
+			x: 4.5d
+			y: -0.5d
+			description: [
+				"Step 1: Spout Water"
+				"Step 2: Spout Water"
+				"Step 3: Spout Water"
+				"Step 4: Spout Water"
+				"Step 5: Almost there..."
+			]
+			dependencies: ["478352A97DAFA187"]
+			id: "470ADF2D9CCC8FB6"
+			tasks: [{
+				id: "51AE7E4C75234EA2"
+				type: "item"
+				item: "minecraft:large_amethyst_bud"
+			}]
+		}
+		{
+			x: 5.0d
+			y: -2.0d
+			description: [
+				"Step 1: Spout Water"
+				"Step 2: Spout Water"
+				"Step 3: Spout Water"
+				"Step 4: Spout Water"
+				"Step 5: It's now slightly larger"
+			]
+			dependencies: ["24EF6E98C8019ECC"]
+			id: "478352A97DAFA187"
+			tasks: [{
+				id: "2B26484C655E880F"
+				type: "item"
+				item: "minecraft:medium_amethyst_bud"
+			}]
+		}
+		{
+			x: 5.0d
+			y: -3.5d
+			description: [
+				"Step 1: Spout Water"
+				"Step 2: Spout Water"
+				"Step 3: Spout Water"
+				"Step 4: Spout Water"
+				"Step 5: It's...smaller?"
+			]
+			dependencies: [
+				"35649781AFCC34E0"
+				"4B871715BABEABF5"
+			]
+			id: "24EF6E98C8019ECC"
+			tasks: [{
+				id: "32EB59046C439408"
+				type: "item"
+				item: "minecraft:small_amethyst_bud"
+			}]
+		}
+		{
+			title: "Molten Iron"
+			icon: "tconstruct:molten_iron_bucket"
+			x: 4.5d
+			y: 5.5d
+			dependencies: ["49A2FC5EF6888830"]
+			id: "21F8F48590981683"
+			tasks: [{
+				id: "71AE5A40D428D968"
+				type: "checkmark"
+				title: "Automated"
+			}]
+		}
+		{
+			icon: "minecraft:clay_ball"
+			x: -3.0d
+			y: -4.0d
+			dependencies: ["6126CAF7956F8660"]
+			id: "7FC18BB1A8DD320F"
+			tasks: [
+				{
+					id: "5446CF59E99FB8F1"
+					type: "item"
+					item: "minecraft:clay_ball"
+				}
+				{
+					id: "091D86BF3182678F"
+					type: "checkmark"
+					title: "Automated"
+				}
+			]
+		}
+		{
+			icon: "minecraft:sand"
+			x: -1.5d
+			y: -5.0d
+			dependencies: ["586E9DE2DCBC4653"]
+			id: "6126CAF7956F8660"
+			tasks: [
+				{
+					id: "4348E3845A9C7296"
+					type: "item"
+					item: "minecraft:sand"
+				}
+				{
+					id: "24011A2F7EAFD81B"
+					type: "checkmark"
+					title: "Automated"
+				}
+			]
+		}
+		{
+			x: -4.0d
+			y: -6.0d
+			subtitle: "Already automated in Chapter 1"
+			hide_dependency_lines: true
+			dependencies: ["74D8887A862D56AE"]
+			id: "586E9DE2DCBC4653"
+			tasks: [{
+				id: "3D43849E1AE31CE2"
+				type: "item"
+				item: "minecraft:gravel"
+			}]
+		}
+		{
+			title: "Molten Zinc"
+			icon: "tconstruct:molten_zinc_bucket"
+			x: -2.5d
+			y: 5.0d
+			dependencies: ["5E1EA424DB70A1D8"]
+			id: "29779D67FCF62C47"
+			tasks: [{
+				id: "1292C8223559AA4A"
+				type: "checkmark"
+				title: "Automated"
+			}]
+		}
+		{
+			title: "Molten Copper"
+			icon: "tconstruct:molten_copper_bucket"
+			x: -4.5d
+			y: 6.5d
+			dependencies: ["379539058CCEE0A9"]
+			id: "24487DFDF6AC1ED5"
+			tasks: [{
+				id: "23C64A2C33C3CD63"
+				type: "checkmark"
+				title: "Automated"
+			}]
+		}
+		{
+			icon: "create:veridium"
+			x: -6.5d
+			y: 1.0d
+			dependencies: [
+				"2076222E503E1957"
+				"162940B771B1F324"
+				"60C30787C7FDB5AD"
+			]
+			id: "276B87725AFB19BC"
+			tasks: [
+				{
+					id: "267B856458601172"
+					type: "item"
+					item: "create:veridium"
+				}
+				{
+					id: "025073C151DDFAD5"
+					type: "checkmark"
+					title: "Automated"
+				}
+			]
+		}
+		{
+			icon: "create:asurine"
+			x: -2.5d
+			y: 1.0d
+			dependencies: [
+				"2076222E503E1957"
+				"11C9867C2664AC83"
+				"60C30787C7FDB5AD"
+			]
+			id: "5C97957EE43C4A89"
+			tasks: [
+				{
+					id: "4B31E9CCEA4C6801"
+					type: "item"
+					item: "create:asurine"
+				}
+				{
+					id: "4A6A9C2ED6DB934B"
+					type: "checkmark"
+					title: "Automated"
+				}
+			]
+		}
+		{
+			title: "Zinc"
+			icon: "create:raw_zinc"
+			x: -2.5d
+			y: 3.0d
+			description: ["There are many ways of processing this. Whatever you find the best, go for it."]
+			dependencies: ["5C97957EE43C4A89"]
+			id: "5E1EA424DB70A1D8"
+			tasks: [
+				{
+					id: "3C05FBD7AF37C0B7"
+					type: "item"
+					item: "create:raw_zinc"
+				}
+				{
+					id: "7A5559C16E1345E2"
+					type: "checkmark"
+					title: "Automated"
+				}
+			]
+		}
+		{
+			title: "Copper"
+			icon: "minecraft:raw_copper"
+			x: -6.0d
+			y: 5.0d
+			description: ["There are many ways of processing this. Whatever you find best, go for it."]
+			dependencies: ["276B87725AFB19BC"]
+			id: "379539058CCEE0A9"
+			tasks: [
+				{
+					id: "5976478FA37E02E8"
+					type: "item"
+					item: "minecraft:raw_copper"
+				}
+				{
+					id: "04E2D2EEB723DE3F"
+					type: "checkmark"
+					title: "Automated"
+				}
+			]
+		}
+		{
+			title: "Find some Amethyst"
+			icon: "minecraft:amethyst_shard"
+			x: 3.0d
+			y: -5.0d
+			description: [
+				"You're going to need to find some Amethyst geodes to do this quest line."
+				""
+				"Don't worry, you'll only need 1 to infinitely duplicate them."
+			]
+			hide_dependency_lines: true
+			dependencies: ["74D8887A862D56AE"]
+			id: "35649781AFCC34E0"
+			tasks: [{
+				id: "412B6014C60B9A42"
+				type: "checkmark"
+				title: "Completed"
+			}]
+		}
+		{
+			title: "Deepslate"
+			icon: "minecraft:cobbled_deepslate"
+			x: -4.5d
+			y: 2.0d
+			description: [
+				"Deepslate will require you to dig down a little bit."
+				""
+				"Making a cobblegen below Y=0 will cause it to become a deepslate generator."
+			]
+			dependencies: ["00D0BEF18AEAE4D0"]
+			id: "2076222E503E1957"
+			tasks: [
+				{
+					id: "7D5F4A096E47E506"
+					type: "item"
+					item: "minecraft:cobbled_deepslate"
+				}
+				{
+					id: "5E7056415F485C7C"
+					type: "checkmark"
+					title: "Automated"
+				}
+			]
+		}
+		{
+			title: "Water"
+			icon: "minecraft:water_bucket"
+			x: 1.5d
+			y: -3.5d
+			description: ["Placing a Fluid Pipe right above an infinite water source and working a pump on the pipe will pull water from the source for your use."]
+			hide_dependency_lines: true
+			dependencies: ["74D8887A862D56AE"]
+			id: "4B871715BABEABF5"
+			tasks: [
+				{
+					id: "31EFF08A2CBEDFDC"
+					type: "item"
+					item: "minecraft:water_bucket"
+				}
+				{
+					id: "780486D8BA6FA9C3"
+					type: "checkmark"
+					title: "Automated"
+				}
+			]
+		}
+		{
+			icon: "minecraft:light_blue_dye"
+			x: -1.0d
+			y: 0.0d
+			dependencies: ["15CD92CE4F9B5036"]
+			id: "11C9867C2664AC83"
+			tasks: [
+				{
+					id: "082C4F548D0D4BB8"
+					type: "item"
+					item: "minecraft:light_blue_dye"
+				}
+				{
+					id: "65B30BEAB631AD4A"
+					type: "checkmark"
+					title: "Automated"
+				}
+			]
+		}
+		{
+			icon: "minecraft:green_dye"
+			x: -6.0d
+			y: -1.5d
+			dependencies: ["15CD92CE4F9B5036"]
+			id: "162940B771B1F324"
+			tasks: [
+				{
+					id: "37677BD9923685DE"
+					type: "item"
+					item: "minecraft:green_dye"
+				}
+				{
+					id: "0BC78DCA9903DE84"
+					type: "checkmark"
+					title: "Automated"
+				}
+			]
+		}
+		{
+			title: "Lava"
+			icon: "minecraft:lava_bucket"
+			x: -4.0d
+			y: -0.5d
+			description: ["Lava can be automated a number of ways."]
+			hide_dependency_lines: true
+			dependencies: ["74D8887A862D56AE"]
+			id: "60C30787C7FDB5AD"
+			tasks: [{
+				id: "1EA730169A22284D"
+				type: "checkmark"
+				title: "Automated"
+			}]
+		}
+	]
+	quest_links: [ ]
+}

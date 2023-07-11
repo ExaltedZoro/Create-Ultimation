@@ -1,0 +1,206 @@
+{
+	id: "6A2985E337F5969A"
+	group: ""
+	order_index: 2
+	filename: "progression"
+	title: "Progression"
+	icon: "create:ultimate_mechanism"
+	default_quest_shape: ""
+	default_hide_dependency_lines: false
+	quests: [
+		{
+			title: "Andesite Age"
+			icon: "create:andesite_alloy"
+			x: -12.0d
+			y: 0.0d
+			subtitle: "Chapter 1 Unlock"
+			dependencies: ["76F86A47C356F6CE"]
+			size: 2.0d
+			id: "0E92F1D1BC057B77"
+			tasks: [{
+				id: "672290092BB4A053"
+				type: "checkmark"
+				title: "The Beginning"
+			}]
+		}
+		{
+			icon: "create:brass_ingot"
+			x: -8.0d
+			y: 0.0d
+			subtitle: "Chapter 2 Unlock"
+			dependencies: [
+				"0E92F1D1BC057B77"
+				"1F1E08A4B488CC05"
+			]
+			size: 2.0d
+			id: "00D0BEF18AEAE4D0"
+			tasks: [{
+				id: "145F12288B058F0F"
+				type: "checkmark"
+				title: "Brass Age"
+			}]
+		}
+		{
+			icon: "thermal:rf_coil"
+			x: -4.0d
+			y: 0.0d
+			subtitle: "Chapter 3 Unlock"
+			dependencies: [
+				"00D0BEF18AEAE4D0"
+				"39E68579F97A2ECA"
+			]
+			size: 2.0d
+			id: "521D7357B9D91A5F"
+			tasks: [{
+				id: "2903C07BB8F45DD0"
+				type: "checkmark"
+				title: "Electrical Age"
+			}]
+		}
+		{
+			icon: "ae2:silicon"
+			x: 0.0d
+			y: 0.0d
+			subtitle: "Chapter 4 Unlock"
+			dependencies: [
+				"521D7357B9D91A5F"
+				"38D9DFBFE2F0D5E6"
+			]
+			size: 2.0d
+			id: "719E9E0C5BD36F67"
+			tasks: [{
+				id: "4150885FBB4D9B76"
+				type: "checkmark"
+				title: "Digital Age"
+			}]
+		}
+		{
+			title: "Mekanical Age"
+			icon: "mekanism:alloy_infused"
+			x: 4.0d
+			y: 0.0d
+			subtitle: "Chapter 5 Unlock"
+			dependencies: ["719E9E0C5BD36F67"]
+			size: 2.0d
+			id: "418C504B3BE6429C"
+			tasks: [{
+				id: "6543EFB16122C824"
+				type: "checkmark"
+			}]
+		}
+		{
+			icon: "mekanism:teleportation_core"
+			x: 8.0d
+			y: 0.0d
+			subtitle: "Chapter 6 Unlock"
+			dependencies: ["418C504B3BE6429C"]
+			size: 2.0d
+			id: "65D5A262E3DFCA94"
+			tasks: [{
+				id: "2D7177935995ED4A"
+				type: "checkmark"
+				title: "Simulated Age"
+			}]
+		}
+		{
+			icon: "mekanism:pellet_antimatter"
+			x: 12.0d
+			y: 0.0d
+			subtitle: "Chapter 7 Unlock"
+			description: ["You've made it this far, just one final stretch to the end! You got this!"]
+			dependencies: ["65D5A262E3DFCA94"]
+			size: 2.0d
+			id: "3E6AB7305D8277EB"
+			tasks: [{
+				id: "2B2B8BC9075A99E5"
+				type: "checkmark"
+				title: "Ultimate Age"
+			}]
+		}
+		{
+			icon: "create:watertight_mechanism"
+			x: -9.75d
+			y: 3.0d
+			subtitle: "Chapter 1B Unlock"
+			dependencies: [
+				"0E92F1D1BC057B77"
+				"1F1E08A4B488CC05"
+			]
+			size: 1.5d
+			id: "0DBAAE1D273C2B1F"
+			tasks: [{
+				id: "27B1296F6D8F4323"
+				type: "checkmark"
+				title: "Fluid Manipulation"
+			}]
+		}
+		{
+			title: "Storage Upgrades"
+			icon: "create:compact_mechanism"
+			x: -9.75d
+			y: -3.0d
+			subtitle: "Chapter 1A Unlock"
+			dependencies: [
+				"0E92F1D1BC057B77"
+				"1F1E08A4B488CC05"
+			]
+			size: 1.5d
+			id: "50997324FEBF0855"
+			tasks: [{
+				id: "6A618EF4103F5D5C"
+				type: "checkmark"
+				title: "Bulk Storage"
+			}]
+		}
+		{
+			icon: "create:redstone_mechanism"
+			x: -6.0d
+			y: -3.0d
+			subtitle: "Chapter 2A Unlock"
+			dependencies: [
+				"00D0BEF18AEAE4D0"
+				"39E68579F97A2ECA"
+			]
+			size: 1.5d
+			id: "7B0C960DE2C9DA22"
+			tasks: [{
+				id: "7AA6128E6D918919"
+				type: "checkmark"
+				title: "Thermal Devices"
+			}]
+		}
+		{
+			x: 16.0d
+			y: 0.0d
+			subtitle: "Congrats!"
+			description: [
+				"Well done on completing Create: Ultimation! You've finished everything the main progression has to offer."
+				""
+				"Thank you for playing!"
+			]
+			dependencies: ["3E6AB7305D8277EB"]
+			size: 2.0d
+			id: "04237E4FF6060E5E"
+			tasks: [{
+				id: "5B458CE24D8FB298"
+				type: "checkmark"
+				title: "You're done!"
+			}]
+		}
+		{
+			icon: "create:tasty_mechanism"
+			x: -6.0d
+			y: 3.0d
+			subtitle: "Chapter 2B Unlock"
+			dependencies: ["00D0BEF18AEAE4D0"]
+			size: 1.5d
+			id: "0A824186E4493B17"
+			tasks: [{
+				id: "3ED50D32F550624F"
+				type: "checkmark"
+				title: "Food Solutions"
+			}]
+		}
+	]
+	quest_links: [ ]
+}

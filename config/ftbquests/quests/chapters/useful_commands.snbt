@@ -1,0 +1,319 @@
+{
+	id: "3F440A42153677A8"
+	group: ""
+	order_index: 1
+	filename: "useful_commands"
+	title: "Useful Commands"
+	icon: "minecraft:command_block"
+	disable_toast: true
+	default_quest_shape: ""
+	default_hide_dependency_lines: true
+	quests: [
+		{
+			title: "Customise your experience"
+			x: 0.0d
+			y: 0.0d
+			description: ["This page contains repeatable, checkmark quests to run commands for customising how you want the pack to function. I'd suggest looking through to see what if you'd like to change anything."]
+			id: "5191B233B77C3090"
+			tasks: [{
+				id: "23FD7CBC66C73186"
+				type: "checkmark"
+				title: "Customize your experience"
+			}]
+		}
+		{
+			x: -4.0d
+			y: 1.5d
+			hide_dependency_lines: true
+			dependencies: ["5191B233B77C3090"]
+			can_repeat: true
+			id: "2E132D840DC732F3"
+			tasks: [{
+				id: "2F5B3B1DCEE013D4"
+				type: "checkmark"
+				title: "Toggle Daylight Cycle On"
+			}]
+			rewards: [{
+				id: "7F279740F64F78FC"
+				type: "command"
+				auto: "enabled"
+				command: "/gamerule doDaylightCycle true"
+				player_command: false
+			}]
+		}
+		{
+			x: -2.0d
+			y: 1.5d
+			hide_dependency_lines: true
+			dependencies: ["5191B233B77C3090"]
+			can_repeat: true
+			id: "66ED118222E1E0B8"
+			tasks: [{
+				id: "63E0E6882011DCDC"
+				type: "checkmark"
+				title: "Toggle Daylight Cycle Off"
+			}]
+			rewards: [{
+				id: "2E64E8F1A5F7F057"
+				type: "command"
+				auto: "enabled"
+				command: "/gamerule doDaylightCycle false"
+				player_command: false
+			}]
+		}
+		{
+			icon: "minecraft:black_dye"
+			x: -1.5d
+			y: 3.0d
+			hide_dependency_lines: true
+			dependencies: ["5191B233B77C3090"]
+			can_repeat: true
+			id: "7D0111E7CE9DB48B"
+			tasks: [{
+				id: "60D508A709EFA08E"
+				type: "checkmark"
+				title: "Set time to Midnight"
+			}]
+			rewards: [{
+				id: "551844FEC8311A56"
+				type: "command"
+				command: "/time set midnight"
+				player_command: false
+			}]
+		}
+		{
+			icon: "minecraft:yellow_dye"
+			x: -4.5d
+			y: 3.0d
+			hide_dependency_lines: true
+			dependencies: ["5191B233B77C3090"]
+			can_repeat: true
+			id: "326447035991061B"
+			tasks: [{
+				id: "205AAEE3B7C47AF6"
+				type: "checkmark"
+				title: "Set time to Day"
+			}]
+			rewards: [{
+				id: "13247A15B8A9BE5E"
+				type: "command"
+				command: "/time set day"
+				player_command: false
+			}]
+		}
+		{
+			icon: "minecraft:gray_dye"
+			x: -2.5d
+			y: 3.0d
+			hide_dependency_lines: true
+			dependencies: ["5191B233B77C3090"]
+			can_repeat: true
+			id: "54A8AAB9EAEEE26B"
+			tasks: [{
+				id: "6D277E4433B87156"
+				type: "checkmark"
+				title: "Set time to Night"
+			}]
+			rewards: [{
+				id: "31295C3924E1016F"
+				type: "command"
+				command: "/time set night"
+				player_command: false
+			}]
+		}
+		{
+			icon: "minecraft:light_blue_dye"
+			x: -3.5d
+			y: 3.0d
+			hide_dependency_lines: true
+			dependencies: ["5191B233B77C3090"]
+			can_repeat: true
+			id: "5C368D6FB26FC77A"
+			tasks: [{
+				id: "746C73181786BC33"
+				type: "checkmark"
+				title: "Set time to Noon"
+			}]
+			rewards: [{
+				id: "56C7453EDA0E13AD"
+				type: "command"
+				command: "/time set noon"
+				player_command: false
+			}]
+		}
+		{
+			x: 2.0d
+			y: 1.5d
+			hide_dependency_lines: true
+			dependencies: ["5191B233B77C3090"]
+			can_repeat: true
+			id: "13C2918B1B7C51E6"
+			tasks: [{
+				id: "46B0F413BE6B1A3B"
+				type: "checkmark"
+				title: "Toggle Mob Spawning On"
+			}]
+			rewards: [{
+				id: "584F6404B0DE8469"
+				type: "command"
+				command: "/gamerule doMobSpawning true"
+				player_command: false
+			}]
+		}
+		{
+			x: 4.0d
+			y: 1.5d
+			hide_dependency_lines: true
+			dependencies: ["5191B233B77C3090"]
+			can_repeat: true
+			id: "25B725D347C4B12F"
+			tasks: [{
+				id: "436C456F499A9720"
+				type: "checkmark"
+				title: "Toggle Mob Spawning Off"
+			}]
+			rewards: [{
+				id: "3ED03E2F723FD6AA"
+				type: "command"
+				command: "/gamerule doMobSpawning false"
+				player_command: false
+			}]
+		}
+		{
+			icon: "ae2:fluix_crystal"
+			x: -4.0d
+			y: 4.5d
+			hide_dependency_lines: true
+			dependencies: ["5191B233B77C3090"]
+			can_repeat: true
+			id: "62AA06CAEB1674DA"
+			tasks: [{
+				id: "5DE0478EF7416E7D"
+				type: "checkmark"
+				title: "Turn AE2 Channels On"
+			}]
+			rewards: [{
+				id: "3C1D5579660DA376"
+				type: "command"
+				command: "/ae2 channelmode default"
+				player_command: false
+			}]
+		}
+		{
+			icon: "ae2:certus_quartz_crystal"
+			x: -2.0d
+			y: 4.5d
+			hide_dependency_lines: true
+			dependencies: ["5191B233B77C3090"]
+			can_repeat: true
+			id: "5BAE35A63AC4D845"
+			tasks: [{
+				id: "42E1739D7AF4A910"
+				type: "checkmark"
+				title: "Turn AE2 channels Off"
+			}]
+			rewards: [{
+				id: "223FB68EC481E5D9"
+				type: "command"
+				command: "/ae2 channelmode infinite"
+				player_command: false
+			}]
+		}
+		{
+			title: "Toggle Fire Tick Off"
+			icon: "minecraft:water_bucket"
+			x: 4.0d
+			y: 3.0d
+			hide_dependency_lines: true
+			dependencies: ["5191B233B77C3090"]
+			can_repeat: true
+			id: "0F41AE5DF8EE5B24"
+			tasks: [{
+				id: "03217634D22A24F9"
+				type: "checkmark"
+				title: "Toggle Fire Tick Off"
+			}]
+			rewards: [{
+				id: "2C88F72D2CB26AFB"
+				type: "command"
+				command: "/gamerule doFireTick false"
+				player_command: false
+			}]
+		}
+		{
+			icon: "minecraft:lava_bucket"
+			x: 2.0d
+			y: 3.0d
+			hide_dependency_lines: true
+			dependencies: ["5191B233B77C3090"]
+			can_repeat: true
+			id: "0F0793774C53DA8B"
+			tasks: [{
+				id: "62D0C3DEF0109C84"
+				type: "checkmark"
+				title: "Toggle Fire Tick On"
+			}]
+			rewards: [{
+				id: "73066ECC4F437CA4"
+				type: "command"
+				command: "/gamerule doFireTick true"
+				player_command: false
+			}]
+		}
+		{
+			x: 2.0d
+			y: 4.5d
+			dependencies: ["5191B233B77C3090"]
+			can_repeat: true
+			id: "598282A8D3D0A9EB"
+			tasks: [{
+				id: "3D3613C3901071EC"
+				type: "checkmark"
+				title: "Toggle Weather Cycle On"
+			}]
+			rewards: [{
+				id: "6AA20C2E41D6CEE1"
+				type: "command"
+				command: "/gamerule doWeatherCycle true"
+				player_command: false
+			}]
+		}
+		{
+			x: 4.0d
+			y: 4.5d
+			dependencies: ["5191B233B77C3090"]
+			can_repeat: true
+			id: "3F32B87A2C4ADB93"
+			tasks: [{
+				id: "51D72D2BCB1BE8D6"
+				type: "checkmark"
+				title: "Toggle Weather Cycle Off"
+			}]
+			rewards: [{
+				id: "4D7BEFC583AFF247"
+				type: "command"
+				command: "/gamerule doWeatherCycle false"
+				player_command: false
+			}]
+		}
+		{
+			x: 3.0d
+			y: 5.5d
+			dependencies: ["5191B233B77C3090"]
+			can_repeat: true
+			id: "2892532075AE1A44"
+			tasks: [{
+				id: "333AE6D00EF02C72"
+				type: "checkmark"
+				title: "Clear Weather"
+			}]
+			rewards: [{
+				id: "4FF3CF2D4738B89C"
+				type: "command"
+				command: "/weather clear"
+				player_command: false
+			}]
+		}
+	]
+	quest_links: [ ]
+}

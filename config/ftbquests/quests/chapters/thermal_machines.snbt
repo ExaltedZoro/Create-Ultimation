@@ -1,0 +1,37 @@
+{
+	id: "7E1892F05046B758"
+	group: "005739175477BC81"
+	order_index: 1
+	filename: "thermal_machines"
+	title: "Thermal Machines"
+	icon: "thermal:machine_frame"
+	default_quest_shape: ""
+	default_hide_dependency_lines: false
+	quests: [
+		{
+			x: 0.0d
+			y: 0.0d
+			dependencies: ["38D9DFBFE2F0D5E6"]
+			id: "529649ECD8420942"
+			tasks: [{
+				id: "0A0C84665BB76B7F"
+				type: "checkmark"
+				title: "Thermal Machines"
+			}]
+		}
+		{
+			title: "Machine Frames"
+			x: 0.0d
+			y: 2.0d
+			description: ["The base of all Thermal machines. You'll be needing a few of these."]
+			dependencies: ["529649ECD8420942"]
+			id: "177B6D5DF031A8FC"
+			tasks: [{
+				id: "0363EF40FEA432E4"
+				type: "item"
+				item: "thermal:machine_frame"
+			}]
+		}
+	]
+	quest_links: [ ]
+}
